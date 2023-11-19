@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow: hidden;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 60px;
+}
+#background{
+    width: 100%;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+#background i{
+    cursor: pointer;
+}
+#headings{
+    text-align: center;
+    margin-top: 100px;
+}   
+#headings h1{
+    font-size: 50px;
+}
+#headings p{
+    font-size: 12px;
+}
+#elements{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    padding: 0 200px;
+    justify-content: space-between;
+}
+#elements .element{
+    width: 20%;
+    height: 340px;
+    border-radius: 10px;
+    padding: 5px;
+    /* background-color: rgb(235, 241, 238); */
+    background-color: rgb(255, 255, 255);
+}
+.element .pic{
+    width: 100%;
+    border-radius: 10px;
+    height: 70%;
+
+    background-size: cover;
+    background-position: center;
+}
+#elements .element:nth-child(1) .pic{
+    background-image: url(./images/img1.jpg);
+}
+#elements .element:nth-child(2) .pic{
+    background-image: url(./images/img2.jpeg);
+}
+#elements .element:nth-child(3) .pic{
+    background-image: url(./images/img3.jpeg);
+}
+#elements .element:nth-child(4) .pic{
+    background-image: url(./images/img4.jpeg);
+}
+.element .cntnt{
+    padding: 20px 10px;
+}
+.element .cntnt h3{
+    color: #777777;
+    margin-top: 10px;
+}
+.element .cntnt span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.element .cntnt span i{
+    margin-left: 10px;
+}
+#sidenav{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0 , -50%);
+    width: 300px;
+    height: 80%;
+    background-color: rgb(209, 209, 209);
+
+}
+#sidenav h3{
+    margin-bottom: 50px;
+}
+#sidenav a{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
